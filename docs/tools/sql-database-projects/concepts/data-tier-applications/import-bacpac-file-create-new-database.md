@@ -64,7 +64,7 @@ Some database options, such as TRUSTWORTHY, DB_CHAINING, and HONOR_BROKER_PRIORI
 
 ## Security
 
-To improve security, SQL Server Authentication logins are stored in a `.bacpac` export file without a password. When the file is imported, the login is created as a disabled login with a generated password. To enable the logins, sign in with `ALTER ANY LOGIN` permission and use `ALTER LOGIN` to enable the login and assign a new password. This extra step isn't needed for Windows Authentication logins because their passwords aren't managed by SQL Server.
+To improve security, SQL Server Authentication logins are stored in a `.bacpac` export file without a password. When the file is imported, the login is created but it is not disabled and need to reset the password as it was made blank at the time of export. To enable the logins, sign in with `ALTER ANY LOGIN` permission and use `ALTER LOGIN` to enable the login and assign a new password. This extra step isn't needed for Windows Authentication logins because their passwords aren't managed by SQL Server.
 
 ## Permissions
 
