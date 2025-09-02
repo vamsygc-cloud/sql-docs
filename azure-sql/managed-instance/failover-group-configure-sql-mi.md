@@ -384,7 +384,7 @@ You can create a failover group between SQL Managed Instances in two different s
 
 > [!IMPORTANT]  
 > Creating a failover group between two instances in different resource groups or subscriptions is only supported with Azure PowerShell, or the REST API, and not the Azure portal or the Azure CLI.
-
+After tesing we can see Failover group can be configured from Azure portal even though we have different resource groups
 <a name="preventing-the-loss-of-critical-data"></a>
 
 ## Prevent loss of critical data
